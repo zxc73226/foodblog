@@ -1,0 +1,27 @@
+@import url("http://fonts.googleapis.com/earlyaccess/notosanstc.css");
+* {
+  box-sizing: border-box; }
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Noto Sans TC', sans-serif;
+  position: relative; }
+
+#header {
+  width: 1170px;
+  height: 81px;
+  margin: 20px auto; }
+
+.header_left_grid {
+  width: 390px;
+  height: 81px;
+  float: left; }
+
+.header_right_grid {
+  width: 780px;
+  height: 28px;
+  float: right; }
+
+/*# sourceMappingURL=foodblog.css.map */
