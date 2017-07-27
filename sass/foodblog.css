@@ -9,7 +9,9 @@
   100% {
     background-image: url("https://basil.idv.tw/blog/wp-content/uploads/2017/05/paris_170513.jpg"); } }
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px; }
 
 body,
 html {
@@ -18,7 +20,9 @@ html {
   width: 100%;
   height: 100%;
   font-family: 'Noto Sans TC', sans-serif;
-  position: relative;
+  position: relative; }
+
+html {
   background-color: rgba(20, 20, 20, 0.05); }
 
 #header {
@@ -59,8 +63,8 @@ html {
 #sectiontop {
   width: 100%;
   height: 960px;
-  animation: img 10000ms infinite;
-  animation-timing-function: steps(1);
+  animation: img 10s infinite;
+  animation-timing-function: steps(1000);
   margin-bottom: 52px; }
   #sectiontop:active {
     animation-play-state: paused; }
@@ -73,37 +77,236 @@ html {
 
 #sectionbottom {
   width: 936px;
-  height: 100%;
-  margin: 0px auto; }
+  margin: 0px auto;
+  margin-bottom: 100px; }
 
-.contenbox {
+.contentbox {
   width: 100%;
   height: 100%;
-  display: flex; }
-  .contenbox .img1 {
-    width: 324px;
-    height: 300px;
-    background-image: url("https://i0.wp.com/basil.idv.tw/blog/wp-content/uploads/2017/07/Hyatt_20.jpg?fit=690%2C459&ssl=1"); }
-  .contenbox .textbox {
-    width: 525px; }
-    .contenbox .textbox a {
-      color: rgba(20, 20, 20, 0.8);
-      font-size: 1rem; }
-    .contenbox .textbox p {
-      font-size: .7rem;
-      color: rgba(20, 20, 20, 0.4); }
-      .contenbox .textbox p a {
-        color: rgba(0, 0, 80, 0.7); }
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  margin: 30px 0px; }
+
+.img {
+  width: 324px;
+  height: 216px;
+  margin-right: 20px;
+  background-size: cover;
+  border-radius: 5px; }
+
+.img1 {
+  background-image: url("https://i0.wp.com/basil.idv.tw/blog/wp-content/uploads/2017/07/Hyatt_20.jpg?fit=690%2C459&ssl=1"); }
+
+.img2 {
+  background-image: url("https://i2.wp.com/basil.idv.tw/blog/wp-content/uploads/2017/07/zoodles_04.jpg?fit=690%2C459&ssl=1"); }
+
+.img3 {
+  background-image: url("https://i2.wp.com/basil.idv.tw/blog/wp-content/uploads/2017/06/somen-14.jpg?fit=690%2C459&ssl=1"); }
+
+.img4 {
+  background-image: url("https://i0.wp.com/basil.idv.tw/blog/wp-content/uploads/2017/06/Sugar-Cured-salmon_04.jpg?fit=690%2C459&ssl=1"); }
+
+.textbox {
+  width: 525px;
+  height: 100%; }
+
+.texta_1 {
+  color: rgba(20, 20, 20, 0.8);
+  font-size: 1rem; }
+
+.textp {
+  font-size: .7rem;
+  color: rgba(20, 20, 20, 0.4);
+  padding-left: 10px; }
+
+.texta_2 {
+  color: rgba(0, 0, 80, 0.7); }
+
+.mbox {
+  width: 936px;
+  height: 65px;
+  background-color: white;
+  font-size: 0.75rem;
+  padding: 18px;
+  color: rgba(0, 80, 0, 0.6); }
+  .mbox spen {
+    margin: 0px 8px; }
+  .mbox a {
+    margin: 0px 8px;
+    color: rgba(0, 0, 80, 0.7); }
 
 #footer {
   width: 100%;
-  height: 1130px;
+  height: 870px;
   border: 1px solid rgba(20, 20, 20, 0.8);
-  background-color: rgba(20, 20, 20, 0.2); }
+  background-color: rgba(20, 20, 20, 0.2);
+  padding: 120px 0px; }
 
 .footerbox {
   width: 1170px;
   height: 100%;
-  margin: 0px auto; }
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.article {
+  width: 360px;
+  height: 500px; }
+  .article p {
+    color: rgba(20, 20, 20, 0.4); }
+  .article h3 {
+    font-size: .55rem;
+    margin-bottom: 20px;
+    color: white; }
+  .article a {
+    text-decoration: none;
+    color: rgba(20, 20, 20, 0.4);
+    font-size: .65rem;
+    cursor: pointer; }
+
+.art {
+  margin-left: 10px; }
+
+.inquire {
+  width: 390px;
+  height: 600px;
+  padding: 0px 8px;
+  color: white; }
+  .inquire h3 {
+    font-size: .55rem;
+    margin-bottom: 20px; }
+
+#select {
+  width: 200px;
+  height: 25px;
+  border-radius: 2px;
+  color: rgba(20, 20, 20, 0.6); }
+  #select:focus {
+    outline: none; }
+
+.search {
+  height: 58px;
+  margin: 28px 0px; }
+  .search p {
+    font-size: .7rem;
+    margin: 0px;
+    color: rgba(20, 20, 20, 0.4);
+    margin-top: 20px;
+    margin-bottom: -8px; }
+
+#tb {
+  width: 216px;
+  height: 30px;
+  border: none;
+  padding: 4px;
+  margin-right: 4px;
+  color: rgba(20, 20, 20, 0.6);
+  border-radius: 5px; }
+  #tb:focus {
+    outline: none; }
+
+#btn {
+  width: 66px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white; }
+  #btn:focus {
+    outline: none; }
+  #btn:hover {
+    box-shadow: 0px 0px 20px 4px rgba(51, 51, 51, 0.6);
+    transition: .4s;
+    cursor: pointer; }
+
+.apibox {
+  width: 352px;
+  height: 44px;
+  display: flex;
+  flex-direction: row;
+  padding: 6px 0px; }
+
+.trivagobox {
+  width: 360px;
+  padding: 10px 15px;
+  background-color: white;
+  margin-top: 30px; }
+  .trivagobox h2 {
+    font-size: .8rem;
+    color: rgba(0, 0, 150, 0.9); }
+  .trivagobox p {
+    font-size: .65rem;
+    color: rgba(20, 20, 20, 0.4); }
+
+.trivagoimg {
+  width: 121px;
+  height: 40px;
+  background-size: cover;
+  float: right;
+  background-image: url("http://sbhc.portalhc.com/SearchBox/Image/Dark/poweredby_hotelscombined.png?cdn=1.0.2017.208002-C5ce53b4abfc2efa1803b57435c973f75ca6505a3"); }
+
+.selectbox {
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: row; }
+
+.month {
+  width: 250px;
+  height: 27px;
+  padding: 4px;
+  margin: 0px 5px;
+  border-radius: 2px; }
+  .month:focus {
+    outline: none; }
+
+.day {
+  width: 50px;
+  height: 27px;
+  padding: 4px;
+  border-radius: 2px; }
+  .day:focus {
+    outline: none; }
+
+.sd {
+  font-size: 0.55rem;
+  margin: 0px 0px 10px 10px;
+  color: rgba(20, 20, 20, 0.4); }
+
+.people {
+  width: 100%;
+  height: 27px;
+  padding: 4px; }
+
+#searchbtn {
+  width: 100%;
+  height: 45px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: .9rem;
+  color: white;
+  background-color: rgba(0, 180, 0, 0.8);
+  border: none; }
+  #searchbtn:focus {
+    outline: none; }
+
+.boximg {
+  width: 25px;
+  height: 25px;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("http://pic.qiantucdn.com/58pic/11/45/91/44c58PICdYp.jpg"); }
+
+.api {
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(20, 20, 20, 0.4);
+  border-radius: 2px;
+  margin: 0px 6px; }
+  .api:hover {
+    background-color: rgba(20, 20, 20, 0.8);
+    transition: .4s; }
 
 /*# sourceMappingURL=foodblog.css.map */
